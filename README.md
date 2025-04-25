@@ -16,7 +16,7 @@
 ![GitHub Grade](https://img.shields.io/badge/GitHub%20Grade-A%2B-brightgreen?style=for-the-badge&logo=github)
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=amanpathak-devops&label=Profile%20views&color=0e75b6&style=flat" alt="amanpathak-devops" /> </p>
 
-# [GCP GKE Google Kubernetes Engine DevOps 75 Real-World Demos](https://links.stacksimplify.com/gcp-google-kubernetes-engine-gke-with-devops)
+# [GCP GKE Google Kubernetes Engine DevOps 75 Real-World Demos](https://github.com/nholuongut/google-kubernetes-engine)
 
 [![Image](images/course-title.png "Google Kubernetes Engine GKE with DevOps 75 Real-World Demos")](https://github.com/nholuongut/google-kubernetes-engine)
 
