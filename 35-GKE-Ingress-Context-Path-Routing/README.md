@@ -26,11 +26,11 @@ gcloud container clusters get-credentials standard-cluster-private-1 --region us
 - Differences for all 3 apps will be only one field from kubernetes manifests perspective and additionally their naming conventions
   - **Kubernetes Deployment:** Container Image name
 - **App1 Nginx: 01-Nginx-App1-Deployment-and-NodePortService.yaml**
-  - **image:** stacksimplify/kube-nginxapp1:1.0.0
+  - **image:** nholuongut/kube-nginxapp1:1.0.0
 - **App2 Nginx: 02-Nginx-App2-Deployment-and-NodePortService.yaml**
-  - **image:** stacksimplify/kube-nginxapp2:1.0.0
+  - **image:** nholuongut/kube-nginxapp2:1.0.0
 - **App3 Nginx: 03-Nginx-App3-Deployment-and-NodePortService.yaml**
-  - **image:** stacksimplify/kubenginx:1.0.0
+  - **image:** nholuongut/kubenginx:1.0.0
 
 
 ## Step-03: 04-Ingress-ContextPath-Based-Routing.yaml

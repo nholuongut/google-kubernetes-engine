@@ -23,11 +23,11 @@ description: Learn and Implement Kubernetes Deployment
 ## Step-02: Create Deployment
 - Create Deployment to rollout a ReplicaSet
 - Verify Deployment, ReplicaSet & Pods
-- **Docker Image Location:** https://hub.docker.com/repository/docker/stacksimplify/kubenginx
+- **Docker Image Location:** https://hub.docker.com/repository/docker/nholuongut/kubenginx
 ```t
 # Create Deployment
 kubectl create deployment <Deplyment-Name> --image=<Container-Image>
-kubectl create deployment my-first-deployment --image=stacksimplify/kubenginx:1.0.0 
+kubectl create deployment my-first-deployment --image=nholuongut/kubenginx:1.0.0 
 
 # Verify Deployment
 kubectl get deployments

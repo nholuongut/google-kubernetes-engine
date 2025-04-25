@@ -42,7 +42,7 @@ spec:
     spec:
       containers:
         - name: app1-nginx
-          image: stacksimplify/kube-nginxapp1:1.0.0
+          image: nholuongut/kube-nginxapp1:1.0.0
           ports:
             - containerPort: 80
           # Readiness Probe (https://cloud.google.com/kubernetes-engine/docs/concepts/ingress#def_inf_hc)             
@@ -76,7 +76,7 @@ spec:
     spec:
       containers:
         - name: app2-nginx
-          image: stacksimplify/kube-nginxapp2:1.0.0
+          image: nholuongut/kube-nginxapp2:1.0.0
           ports:
             - containerPort: 80
           # Readiness Probe (https://cloud.google.com/kubernetes-engine/docs/concepts/ingress#def_inf_hc)             
@@ -110,7 +110,7 @@ spec:
     spec:
       containers:
         - name: app3-nginx
-          image: stacksimplify/kubenginx:1.0.0
+          image: nholuongut/kubenginx:1.0.0
           ports:
             - containerPort: 80
           # Readiness Probe (https://cloud.google.com/kubernetes-engine/docs/concepts/ingress#def_inf_hc)            

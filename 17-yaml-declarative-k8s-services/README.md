@@ -14,7 +14,7 @@ description: Learn to write and test Kubernetes Services with YAML
 - **Important Notes:** 
   - Name of Cluster IP service should be `name: my-backend-service` because  same is configured in frontend nginx reverse proxy `default.conf`. 
   - Test with different name and understand the issue we face
-  - We have also discussed about in our  [Section-12](https://github.com/stacksimplify/google-kubernetes-engine/tree/main/12-kubectl-imperative-k8s-services)
+  - We have also discussed about in our  [Section-12](https://github.com/nholuongut/google-kubernetes-engine/tree/main/12-kubectl-imperative-k8s-services)
 ```t
 # Change Directory
 cd kube-manifests

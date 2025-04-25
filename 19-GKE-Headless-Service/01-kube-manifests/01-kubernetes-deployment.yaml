@@ -15,7 +15,7 @@ spec: # Dictionary
     spec:
       containers: # List
         - name: myapp1-container
-          #image: stacksimplify/kubenginx:1.0.0
+          #image: nholuongut/kubenginx:1.0.0
           image: us-docker.pkg.dev/google-samples/containers/gke/hello-app:2.0
           ports: 
             - containerPort: 8080  

@@ -18,7 +18,7 @@ description: Learn about Kubernetes ClusterIP and Load Balancer Services
 - Create a ClusterIP service for load balancing backend application. 
 ```t
 # Create Deployment for Backend Rest App
-kubectl create deployment my-backend-rest-app --image=stacksimplify/kube-helloworld:1.0.0 
+kubectl create deployment my-backend-rest-app --image=nholuongut/kube-helloworld:1.0.0 
 kubectl get deploy
 
 # Create ClusterIp Service for Backend Rest App
@@ -28,14 +28,14 @@ Observation: We don't need to specify "--type=ClusterIp" because default setting
 ```
 - **Important Note:** If backend application port (Container Port: 8080) and Service Port (8080) are same we don't need to use **--target-port=8080** but for avoiding the confusion i have added it. Same case applies to frontend application and service. 
 
-- **Backend HelloWorld Application Source** [kube-helloworld](https://github.com/stacksimplify/kubernetes-fundamentals/tree/master/00-Docker-Images/02-kube-backend-helloworld-springboot/kube-helloworld)
+- **Backend HelloWorld Application Source** [kube-helloworld](https://github.com/nholuongut/kubernetes-fundamentals/tree/master/00-Docker-Images/02-kube-backend-helloworld-springboot/kube-helloworld)
 
 
 ## Step-03: LoadBalancer Service - Frontend Application Setup
 - We have implemented **LoadBalancer Service** multiple times so far (in pods, replicasets and deployments), even then we are going to implement one more time to get a full architectural view in relation with ClusterIp service. 
 - Create a deployment for Frontend Application (Nginx acting as Reverse Proxy)
 - Create a LoadBalancer service for load balancing frontend application. 
-- **Important Note:** In Nginx reverse proxy, ensure backend service name `my-backend-service` is updated when you are building the frontend container. We already built it and put ready for this demo (stacksimplify/kube-frontend-nginx:1.0.0)
+- **Important Note:** In Nginx reverse proxy, ensure backend service name `my-backend-service` is updated when you are building the frontend container. We already built it and put ready for this demo (nholuongut/kube-frontend-nginx:1.0.0)
 - **Nginx Conf File**
 ```conf
 server {
@@ -52,11 +52,11 @@ server {
     }
 }
 ```
-- **Docker Image Location:** https://hub.docker.com/repository/docker/stacksimplify/kube-frontend-nginx
-- **Frontend Nginx Reverse Proxy Application Source** [kube-frontend-nginx](https://github.com/stacksimplify/kubernetes-fundamentals/tree/master/00-Docker-Images/03-kube-frontend-nginx)
+- **Docker Image Location:** https://hub.docker.com/repository/docker/nholuongut/kube-frontend-nginx
+- **Frontend Nginx Reverse Proxy Application Source** [kube-frontend-nginx](https://github.com/nholuongut/kubernetes-fundamentals/tree/master/00-Docker-Images/03-kube-frontend-nginx)
 ```t
 # Create Deployment for Frontend Nginx Proxy
-kubectl create deployment my-frontend-nginx-app --image=stacksimplify/kube-frontend-nginx:1.0.0 
+kubectl create deployment my-frontend-nginx-app --image=nholuongut/kube-frontend-nginx:1.0.0 
 kubectl get deploy
 
 # Create LoadBalancer Service for Frontend Nginx Proxy

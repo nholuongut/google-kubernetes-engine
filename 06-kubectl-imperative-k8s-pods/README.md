@@ -29,7 +29,7 @@ kubectl get nodes -o wide
 kubectl run <desired-pod-name> --image <Container-Image> 
 
 # Replace Pod Name, Container Image
-kubectl run my-first-pod --image stacksimplify/kubenginx:1.0.0
+kubectl run my-first-pod --image nholuongut/kubenginx:1.0.0
 ```  
 
 ### Step-02-03: List Pods
@@ -102,7 +102,7 @@ kubectl delete pod my-first-pod
 ```t
 # Create  a Pod
 kubectl run <desired-pod-name> --image <Container-Image> 
-kubectl run my-first-pod --image stacksimplify/kubenginx:1.0.0 
+kubectl run my-first-pod --image nholuongut/kubenginx:1.0.0 
 
 # Expose Pod as a Service
 kubectl expose pod <Pod-Name>  --type=LoadBalancer --port=80 --name=<Service-Name>

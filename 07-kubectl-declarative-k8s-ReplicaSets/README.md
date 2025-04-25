@@ -35,7 +35,7 @@ spec:
     spec:
       containers:
       - name: my-helloworld-app
-        image: stacksimplify/kube-helloworld:1.0.0
+        image: nholuongut/kube-helloworld:1.0.0
 ```
 
 ### Step-02-02: List ReplicaSets

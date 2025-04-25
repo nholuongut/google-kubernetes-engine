@@ -30,7 +30,7 @@ kubectl rollout pause deployment/<Deployment-Name>
 kubectl rollout pause deployment/my-first-deployment
 
 # Update Deployment - Application Version from V3 to V4
-kubectl set image deployment/my-first-deployment kubenginx=stacksimplify/kubenginx:4.0.0 
+kubectl set image deployment/my-first-deployment kubenginx=nholuongut/kubenginx:4.0.0 
 
 # Check the Rollout History of a Deployment
 kubectl rollout history deployment/my-first-deployment  

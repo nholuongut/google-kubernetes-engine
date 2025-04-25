@@ -17,7 +17,7 @@ kubectl get deployment my-first-deployment -o yaml
 
 # Update Deployment - SHOULD WORK NOW
 kubectl set image deployment/<Deployment-Name> <Container-Name>=<Container-Image> 
-kubectl set image deployment/my-first-deployment kubenginx=stacksimplify/kubenginx:2.0.0 
+kubectl set image deployment/my-first-deployment kubenginx=nholuongut/kubenginx:2.0.0 
 ```
 
 ### Verify Rollout Status (Deployment Status)
@@ -87,12 +87,12 @@ kubectl edit deployment/my-first-deployment
 # Change From 2.0.0
     spec:
       containers:
-      - image: stacksimplify/kubenginx:2.0.0
+      - image: nholuongut/kubenginx:2.0.0
 
 # Change To 3.0.0
     spec:
       containers:
-      - image: stacksimplify/kubenginx:3.0.0
+      - image: nholuongut/kubenginx:3.0.0
 ```
 
 

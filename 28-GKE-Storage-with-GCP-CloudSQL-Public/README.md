@@ -129,7 +129,7 @@ spec:
           command: ['sh', '-c', 'echo -e "Checking for the availability of MySQL Server deployment"; while ! nc -z mysql-externalname-service 3306; do sleep 1; printf "-"; done; echo -e "  >> MySQL DB Server has started";']      
       containers:
         - name: usermgmt-webapp
-          image: stacksimplify/kube-usermgmt-webapp:1.0.0-MySQLDB
+          image: nholuongut/kube-usermgmt-webapp:1.0.0-MySQLDB
           imagePullPolicy: Always
           ports: 
             - containerPort: 8080           
@@ -226,7 +226,7 @@ Username: admin102
 Password: password102
 First Name: fname102
 Last Name: lname102
-Email Address: admin102@stacksimplify.com
+Email Address: admin102@nholuongut.com
 Social Security Address: ssn102
 
 # MySQL Client 8.0: Replace External Name Service, Username and Password

@@ -18,6 +18,6 @@ spec:
     spec: 
       containers: 
         - name: frontend-nginxapp
-          image: stacksimplify/kube-frontend-nginx:1.0.0
+          image: nholuongut/kube-frontend-nginx:1.0.0
           ports:
             - containerPort: 80

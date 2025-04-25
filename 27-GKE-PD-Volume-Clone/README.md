@@ -87,7 +87,7 @@ Username: admin102
 Password: password102
 First Name: fname102
 Last Name: lname102
-Email Address: admin102@stacksimplify.com
+Email Address: admin102@nholuongut.com
 Social Security Address: ssn102
 
 # Create New User admin103
@@ -95,7 +95,7 @@ Username: admin103
 Password: password103
 First Name: fname103
 Last Name: lname103
-Email Address: admin103@stacksimplify.com
+Email Address: admin103@nholuongut.com
 Social Security Address: ssn103
 ```
 

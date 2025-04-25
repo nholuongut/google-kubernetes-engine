@@ -42,7 +42,7 @@ spec:
     spec:
       containers:
         - name: app3-nginx
-          image: stacksimplify/kubenginx:1.0.0
+          image: nholuongut/kubenginx:1.0.0
           ports:
             - containerPort: 80
           # Readiness Probe (https://cloud.google.com/kubernetes-engine/docs/concepts/ingress#def_inf_hc)            
